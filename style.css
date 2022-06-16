@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-size: 16px;   
+}
+
+main{   
+    background: url("/images/bg-intro-desktop.png") no-repeat;
+    background-color: hsl(0, 100%, 74%);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 0px 160px;
+}
+h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+.left-column{
+    color: white;
+    width: 50%;
+    max-width: 100%;
+    padding-right: 30px;
+}
+.left-column p{
+    padding: 15px;
+    line-height: 26px;
+    opacity: 0.9;
+}
+.right-column{
+    color: white;
+    width: 50%;
+    max-width: 100%;
+}
+.upper-text{
+    width: 100%;
+    border-radius: 7px;
+    outline: none;
+    text-align: center;
+    padding: 15px 20px;
+    padding-right: 30px;
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    box-shadow: 0 0 0 4px hsl(248, 32%, 49%) inset,0 0 0 2px rgba(255, 255, 255, 0.05) inset,0 4px 0 0      hsl(0, 45%, 60%),0 4px 0 1px hsl(0, 62%, 63%, 0.5),0 4px 4px 2px hsl(0, 62%, 63%, 0.7);
+    background: hsl(248, 32%, 49%);
+
+}
+.fields{
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px white inset,0 0 0 2px rgba(255, 255, 255, 0.05) inset,0 4px 0 0      hsl(0, 45%, 60%),0 4px 0 1px hsl(0, 62%, 63%, 0.5),0 4px 4px 2px hsl(0, 62%, 63%, 0.7);
+}
+.fields input {
+    border: 1px solid rgb(216, 216, 216);
+    caret-color: hsl(246, 25%, 77%);
+    border-radius: 6px;
+    outline: none;
+    padding: 10px;
+    transition: all 0.6s ease;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px 0 19px 0;
+    display: inline-block;
+    background: none;
+}
+.fields input:focus{
+    border-color: hsl(246, 25%, 77%);
+    cursor: pointer;
+}
+.button-area{
+    display: flex;
+    align-items: center;
+    outline: none;
+    display: inline-block;
+    background: none;
+}
+.button-area button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    transition: all 0.6s ease;
+    padding: 10px;
+    color: white;
+    box-shadow: 0 0 0 1px hsl(154, 59%, 51%) inset,0 0 0 2px rgba(255, 255, 255, 0.059) inset,0 4px 0 0      hsl(153, 58%, 41%),0 4px 0 1px rgba(0, 0, 0, 0.23),0 4px 4px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    border: hsl(153, 58%, 41%);
+    background: hsl(154, 59%, 51%);
+}
+.button-area p{
+    padding: 10px;
+    font-size: 10px;
+    color: hsl(246, 25%, 77%);
+}
+.button-area p span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+button:hover{
+    opacity: 0.8;
+}
+.error{
+    border: 2px solid hsl(0, 100%, 74%);
+    background: url('/images/icon-error.svg') no-repeat;
+    background-position: 95% 50%;
+}
+.error-text{
+    font-size: 12px;
+    font-style: italic;
+    margin-left: auto;
+    margin-top: -14px;
+    margin-bottom: 20px;
+    color: hsl(0, 100%, 74%);
+}
+.success{
+    border: 2px solid hsl(154, 59%, 51%);
+}
+@media (max-width: 768px) {
+    main{
+       padding: 40px 20px;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background: url('/images/bg-intro-mobile.png');
+       background-color: hsl(0, 100%, 74%);
+    }
+    .left-column{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 0px 60px;
+    }
+    form p{
+        text-align: center;
+    }
+    h2{
+        font-size: 36px;
+    }
+    .upper-text{
+        padding: 15px 50px;
+    }
+}
