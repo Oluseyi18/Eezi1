@@ -43,6 +43,7 @@ form.addEventListener( 'submit', e => {
         successFunc(password)
     }
 })
+
 function errorFunc(req, message){
     const formControl = req.parentElement;
     const span = formControl.querySelector('span');
